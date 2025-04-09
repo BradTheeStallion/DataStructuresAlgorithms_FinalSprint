@@ -1,0 +1,1 @@
+[![JUnit Tests](https://github.com/BradTheeStallion/DataStructuresAlgorithms_FinalSprint/actions/workflows/ci.yml/badge.svg)](https://github.com/BradTheeStallion/DataStructuresAlgorithms_FinalSprint/actions/workflows/ci.yml)
