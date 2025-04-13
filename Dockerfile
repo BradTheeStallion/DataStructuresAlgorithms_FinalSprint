@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y wget && \
     apt-get purge -y --auto-remove wget && \
     rm -rf /var/lib/apt/lists/*
 COPY . /app
-RUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTests --debug
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
