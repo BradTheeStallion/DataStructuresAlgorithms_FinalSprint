@@ -13,4 +13,4 @@ WORKDIR /app
 COPY --from=build /wait-for-it.sh /wait-for-it.sh
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
-CMD ["/bin/bash", "-c", "/wait-for-it.sh ${DATABASE_HOST:-db}:${DATABASE_PORT:-3306} -t 60 -- java -jar app.jar"]
+CMD ["/bin/bash", "-c", "/wait-for-it.sh ${DATABASE_HOST:-db}:${DATABASE_PORT:-3307} -t 60 -- java -jar app.jar"]
