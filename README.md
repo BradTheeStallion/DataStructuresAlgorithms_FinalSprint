@@ -35,12 +35,12 @@ Creates a new binary search tree with the provided name and values.
 
 #### Example Request
 
-<pre>```json
+<pre>
 {
     "name": "Test Tree 1",
     "values": [50, 30, 70, 90, 40, 60, 80]
 }
-```</pre>
+</pre>
 
 #### Response
 
