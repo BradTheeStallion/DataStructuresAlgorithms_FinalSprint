@@ -12,9 +12,11 @@ Feel free to read the assignment [here](https://github.com/user-attachments/file
 The application is currently not congigured to run locally, but feel free to read through the backend code in this project, the frontend code [here](https://github.com/BradTheeStallion/binary-search-tree), and check out the deployed project [here](https://bradtheestallion.github.io/portfolio/binary-tree).
 
 ## 🔍 Project Summary
-# Binary Search Tree API Guide
+## Binary Search Tree API Guide
 
 This API allows you to create, retrieve, and delete binary search trees. The API manages trees created from arrays of values and provides operations to interact with these trees.
+
+Please note that the JSONs below are indicative of what will display on a Postman test and the React app displays a tidier version of the JSON.
 
 ### Create a New Tree
 
@@ -33,12 +35,12 @@ Creates a new binary search tree with the provided name and values.
 
 #### Example Request
 
-```json
+<pre>```json
 {
     "name": "Test Tree 1",
     "values": [50, 30, 70, 90, 40, 60, 80]
 }
-```
+```</pre>
 
 #### Response
 
@@ -47,9 +49,9 @@ Creates a new binary search tree with the provided name and values.
 
 #### Example Response
 
-```json
+<pre>```json
 {"id":1,"name":"Test Tree 1","createdAt":"2025-04-16T20:47:22.765505953","originalInputs":[50,30,70,90,40,60,80],"nodeCount":7,"height":3,"isBalanced":true,"rootNode":{"id":84,"value":50,"left":{"id":85,"value":30,"left":null,"right":{"id":86,"value":40,"left":null,"right":null,"leaf":true},"leaf":false},"right":{"id":87,"value":70,"left":{"id":88,"value":60,"left":null,"right":null,"leaf":true},"right":{"id":89,"value":90,"left":{"id":90,"value":80,"left":null,"right":null,"leaf":true},"right":null,"leaf":false},"leaf":false},"leaf":false}}
-```
+```</pre>
 
 ### Get a Specific Tree
 
@@ -72,9 +74,9 @@ GET /api/trees/1
 
 #### Example Response
 
-```json
+<pre>```json
 {"id":1,"name":"Test Tree 1","createdAt":"2025-04-16T20:47:22.765506","originalInputs":[50,30,70,90,40,60,80],"nodeCount":7,"height":3,"isBalanced":true,"rootNode":{"id":84,"value":50,"left":{"id":85,"value":30,"left":null,"right":{"id":86,"value":40,"left":null,"right":null,"leaf":true},"leaf":false},"right":{"id":87,"value":70,"left":{"id":88,"value":60,"left":null,"right":null,"leaf":true},"right":{"id":89,"value":90,"left":{"id":90,"value":80,"left":null,"right":null,"leaf":true},"right":null,"leaf":false},"leaf":false},"leaf":false}}
-```
+```</pre>
 
 ### Get All Trees
 
@@ -89,7 +91,7 @@ Retrieves a paginated list of all binary search trees.
 #### Example Request
 
 ```
-GET /api/trees?page=0&size=5
+GET /api/trees
 ```
 
 #### Response
@@ -99,9 +101,9 @@ GET /api/trees?page=0&size=5
 
 #### Example Response
 
-```json
+<pre>```json
 {"trees":[{"id":1,"name":"Test Tree 1","createdAt":"2025-04-16T20:47:22.765506","nodeCount":7,"height":3,"isBalanced":true},{"id":2,"name":"test","createdAt":"2025-04-16T19:25:21.749214","nodeCount":7,"height":5,"isBalanced":false},{"id":3,"name":"uhjfv","createdAt":"2025-04-16T19:16:28.762452","nodeCount":6,"height":4,"isBalanced":false},{"id":4,"name":"Manual Test","createdAt":"2025-04-16T18:43:07.804892","nodeCount":6,"height":4,"isBalanced":false}],"totalCount":4,"page":0,"size":5}
-```
+```</pre>
 
 ### Delete a Tree
 
@@ -120,6 +122,3 @@ DELETE /api/trees/1
 #### Response
 
 - **Status Code**: `204 No Content`
-
-## Please note these are the JSONs to be returned by Postman. The React app displays a cleaner JSON format.
-
