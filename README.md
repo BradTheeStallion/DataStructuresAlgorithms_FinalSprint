@@ -102,7 +102,6 @@ Creates a new binary search tree with the provided name and values.
     "leaf": false
   }
 }
-
 </pre>
 
 ### Get a Specific Tree
@@ -179,7 +178,6 @@ GET /api/trees/1
     "leaf": false
   }
 }
-
 </pre>
 
 ### Get All Trees
@@ -245,7 +243,6 @@ GET /api/trees
   "page": 0,
   "size": 5
 }
-
 </pre>
 
 ### Delete a Tree
