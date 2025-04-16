@@ -27,3 +27,9 @@ services:
       - dsa-network
     restart: always
     mem_limit: 512m
+
+networks:
+  dsa-network:
+
+volumes:
+  mysql-data:
