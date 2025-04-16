@@ -50,7 +50,59 @@ Creates a new binary search tree with the provided name and values.
 #### Example Response
 
 <pre>
-{"id":1,"name":"Test Tree 1","createdAt":"2025-04-16T20:47:22.765505953","originalInputs":[50,30,70,90,40,60,80],"nodeCount":7,"height":3,"isBalanced":true,"rootNode":{"id":84,"value":50,"left":{"id":85,"value":30,"left":null,"right":{"id":86,"value":40,"left":null,"right":null,"leaf":true},"leaf":false},"right":{"id":87,"value":70,"left":{"id":88,"value":60,"left":null,"right":null,"leaf":true},"right":{"id":89,"value":90,"left":{"id":90,"value":80,"left":null,"right":null,"leaf":true},"right":null,"leaf":false},"leaf":false},"leaf":false}}
+{
+  "id": 1,
+  "name": "Test Tree 1",
+  "createdAt": "2025-04-16T20:47:22.765505953",
+  "originalInputs": [50, 30, 70, 90, 40, 60, 80],
+  "nodeCount": 7,
+  "height": 3,
+  "isBalanced": true,
+  "rootNode": {
+    "id": 84,
+    "value": 50,
+    "left": {
+      "id": 85,
+      "value": 30,
+      "left": null,
+      "right": {
+        "id": 86,
+        "value": 40,
+        "left": null,
+        "right": null,
+        "leaf": true
+      },
+      "leaf": false
+    },
+    "right": {
+      "id": 87,
+      "value": 70,
+      "left": {
+        "id": 88,
+        "value": 60,
+        "left": null,
+        "right": null,
+        "leaf": true
+      },
+      "right": {
+        "id": 89,
+        "value": 90,
+        "left": {
+          "id": 90,
+          "value": 80,
+          "left": null,
+          "right": null,
+          "leaf": true
+        },
+        "right": null,
+        "leaf": false
+      },
+      "leaf": false
+    },
+    "leaf": false
+  }
+}
+
 </pre>
 
 ### Get a Specific Tree
@@ -75,7 +127,59 @@ GET /api/trees/1
 #### Example Response
 
 <pre>
-{"id":1,"name":"Test Tree 1","createdAt":"2025-04-16T20:47:22.765506","originalInputs":[50,30,70,90,40,60,80],"nodeCount":7,"height":3,"isBalanced":true,"rootNode":{"id":84,"value":50,"left":{"id":85,"value":30,"left":null,"right":{"id":86,"value":40,"left":null,"right":null,"leaf":true},"leaf":false},"right":{"id":87,"value":70,"left":{"id":88,"value":60,"left":null,"right":null,"leaf":true},"right":{"id":89,"value":90,"left":{"id":90,"value":80,"left":null,"right":null,"leaf":true},"right":null,"leaf":false},"leaf":false},"leaf":false}}
+{
+  "id": 1,
+  "name": "Test Tree 1",
+  "createdAt": "2025-04-16T20:47:22.765505953",
+  "originalInputs": [50, 30, 70, 90, 40, 60, 80],
+  "nodeCount": 7,
+  "height": 3,
+  "isBalanced": true,
+  "rootNode": {
+    "id": 84,
+    "value": 50,
+    "left": {
+      "id": 85,
+      "value": 30,
+      "left": null,
+      "right": {
+        "id": 86,
+        "value": 40,
+        "left": null,
+        "right": null,
+        "leaf": true
+      },
+      "leaf": false
+    },
+    "right": {
+      "id": 87,
+      "value": 70,
+      "left": {
+        "id": 88,
+        "value": 60,
+        "left": null,
+        "right": null,
+        "leaf": true
+      },
+      "right": {
+        "id": 89,
+        "value": 90,
+        "left": {
+          "id": 90,
+          "value": 80,
+          "left": null,
+          "right": null,
+          "leaf": true
+        },
+        "right": null,
+        "leaf": false
+      },
+      "leaf": false
+    },
+    "leaf": false
+  }
+}
+
 </pre>
 
 ### Get All Trees
@@ -102,7 +206,46 @@ GET /api/trees
 #### Example Response
 
 <pre>
-{"trees":[{"id":1,"name":"Test Tree 1","createdAt":"2025-04-16T20:47:22.765506","nodeCount":7,"height":3,"isBalanced":true},{"id":2,"name":"test","createdAt":"2025-04-16T19:25:21.749214","nodeCount":7,"height":5,"isBalanced":false},{"id":3,"name":"uhjfv","createdAt":"2025-04-16T19:16:28.762452","nodeCount":6,"height":4,"isBalanced":false},{"id":4,"name":"Manual Test","createdAt":"2025-04-16T18:43:07.804892","nodeCount":6,"height":4,"isBalanced":false}],"totalCount":4,"page":0,"size":5}
+{
+  "trees": [
+    {
+      "id": 1,
+      "name": "Test Tree 1",
+      "createdAt": "2025-04-16T20:47:22.765506",
+      "nodeCount": 7,
+      "height": 3,
+      "isBalanced": true
+    },
+    {
+      "id": 2,
+      "name": "test",
+      "createdAt": "2025-04-16T19:25:21.749214",
+      "nodeCount": 7,
+      "height": 5,
+      "isBalanced": false
+    },
+    {
+      "id": 3,
+      "name": "uhjfv",
+      "createdAt": "2025-04-16T19:16:28.762452",
+      "nodeCount": 6,
+      "height": 4,
+      "isBalanced": false
+    },
+    {
+      "id": 4,
+      "name": "Manual Test",
+      "createdAt": "2025-04-16T18:43:07.804892",
+      "nodeCount": 6,
+      "height": 4,
+      "isBalanced": false
+    }
+  ],
+  "totalCount": 4,
+  "page": 0,
+  "size": 5
+}
+
 </pre>
 
 ### Delete a Tree
