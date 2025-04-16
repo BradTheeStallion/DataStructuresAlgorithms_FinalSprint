@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build: .
@@ -14,6 +12,7 @@ services:
     networks:
       - dsa-network
     restart: always
+    mem_limit: 512m
 
   db:
     image: mysql:8.0
@@ -27,9 +26,4 @@ services:
     networks:
       - dsa-network
     restart: always
-
-networks:
-  dsa-network:
-
-volumes:
-  mysql-data:
+    mem_limit: 512m
