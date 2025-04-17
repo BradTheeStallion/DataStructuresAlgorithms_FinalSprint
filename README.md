@@ -9,7 +9,7 @@ The entire project was containerized with Docker, thoroughly tested using a comb
 
 Feel free to read the assignment [here](https://github.com/user-attachments/files/19784294/DSA.Winter.2025.Final.pdf).
 
-The application is currently not congigured to run locally, but feel free to read through the backend code in this project, the frontend code [here](https://github.com/BradTheeStallion/binary-search-tree), and check out the deployed project [here](https://bradtheestallion.github.io/portfolio/binary-tree).
+The application is currently not congigured to run locally, but feel free to read through the backend code in this project, the frontend code [here](https://github.com/BradTheeStallion/binary-search-tree), and check out the deployed project [here](http://brad-thee-stallion-portfolio.s3-website-us-east-1.amazonaws.com/).
 
 ## 🔍 Project Summary
 ## Binary Search Tree API Guide
