@@ -1,5 +1,7 @@
 [![JUnit Tests](https://github.com/BradTheeStallion/DataStructuresAlgorithms_FinalSprint/actions/workflows/ci.yml/badge.svg)](https://github.com/BradTheeStallion/DataStructuresAlgorithms_FinalSprint/actions/workflows/ci.yml)
 
+[![Deploy to EC2](https://github.com/BradTheeStallion/DataStructuresAlgorithms_FinalSprint/actions/workflows/cd.yml/badge.svg)](https://github.com/BradTheeStallion/DataStructuresAlgorithms_FinalSprint/actions/workflows/cd.yml)
+
 # Binary Search Trees
 ## Final Sprint Project for Data Structures and Algorithms
 The objective of this project was to develop a Spring Boot application that allows users to create a binary search tree from a series of numbers, visualize the resulting tree, and view previous tree results.
